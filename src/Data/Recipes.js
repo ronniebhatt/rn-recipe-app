@@ -11,7 +11,8 @@ const Recipes = [
         'http://www.seriouseats.com/recipes/2011/12/chicken-vesuvio-recipe.html',
       shareAs:
         'http://www.edamam.com/recipe/chicken-vesuvio-b79327d05b8e5b838ad6cfd9576b30b6/chicken',
-      raiting: 4.0,
+      rating: 5,
+      serving: 3,
       dietLabels: ['Low-Carb'],
       cautions: ['Sulfites'],
       ingredientLines: [
@@ -137,7 +138,8 @@ const Recipes = [
       url: 'http://norecipes.com/recipe/chicken-paprikash/',
       shareAs:
         'http://www.edamam.com/recipe/chicken-paprikash-8275bb28647abcedef0baaf2dcf34f8b/chicken',
-      raiting: 4.5,
+      rating: 4,
+      serving: 4,
       dietLabels: ['Low-Carb'],
       cautions: ['Sulfites', 'FODMAP'],
       ingredientLines: [
@@ -272,7 +274,9 @@ const Recipes = [
       url: 'http://www.marthastewart.com/318981/baked-chicken',
       shareAs:
         'http://www.edamam.com/recipe/baked-chicken-be3ba087e212f13672b553ecfa876333/chicken',
-      raiting: 4.3,
+      rating: 4,
+      serving: 4,
+
       dietLabels: ['Low-Carb'],
       cautions: ['FODMAP'],
       ingredientLines: [
@@ -337,7 +341,9 @@ const Recipes = [
         'http://www.bonappetit.com/columns/breadwinner/article/how-to-get-your-kids-to-eat-sauce-let-them-cook-it-themselves',
       shareAs:
         'http://www.edamam.com/recipe/catalan-chicken-2463f2482609d7a471dbbf3b268bd956/chicken',
-      raiting: 4.5,
+      rating: 4,
+      serving: 4,
+
       dietLabels: ['Low-Carb'],
 
       cautions: ['Sulfites'],
