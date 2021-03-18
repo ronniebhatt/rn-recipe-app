@@ -1,67 +1,40 @@
-import React, {useEffect, useState, useRef} from 'react';
-import {View, Text, StyleSheet, FlatList, Dimensions} from 'react-native';
-import getRecipe from './src/API/getRecipe';
+import React, { useEffect, useState, useRef } from 'react';
+import {
+  View,
+  Text,
+  StyleSheet,
+  FlatList,
+  Dimensions,
+  Image,
+} from 'react-native';
+import Recipes from './src/Data/Recipes';
 
-const {width, height} = Dimensions.get('window');
+const { width, height } = Dimensions.get('window');
 export default function App() {
-  const ref = useRef({scroll: null});
-  const [recipes, setRecipes] = useState([
-    {
-      title: 'Test 1',
-      recipe_by: 'test 1',
-      cooking_time: 30,
-      calories: 232,
-      serving: 2,
-    },
-    {
-      title: 'Test 2',
-      recipe_by: 'test 2',
-      cooking_time: 30,
-      calories: 232,
-      serving: 2,
-    },
-    {
-      title: 'Test 3',
-      recipe_by: 'test 3',
-      cooking_time: 30,
-      calories: 232,
-      serving: 2,
-    },
-    {
-      title: 'Test 4',
-      recipe_by: 'test 4',
-      cooking_time: 30,
-      calories: 232,
-      serving: 2,
-    },
-  ]);
+  const ref = useRef({ scroll: null });
 
-  // const getRecipeData = async () => {
-  //   try {
-  //     const data = await getRecipe();
-  //     console.log('==a==', data);
-  //     setRecipes(data.hits);
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   getRecipeData();
-  // }, []);
-
-  const renderItem = ({item}) => {
-    const {title, recipe_by, cooking_time, calories, serving} = item;
+  const renderItem = ({ item }) => {
+    console.log(item);
+    const { label, raiting, cooking_time, calories, image } = item.recipe;
     return (
       <View style={styles.recipeContainer}>
         <View style={styles.recipeTitleContainer}>
-          <Text>{title}</Text>
-          <Text>Recipe By {recipe_by}</Text>
+          <Image
+            source={{ uri: image }}
+            style={{
+              width: width * 0.8,
+              height: height * 0.5,
+              alignSelf: 'center',
+              borderRadius: width,
+              resizeMode: 'cover',
+            }}
+          />
+          <Text style={{ fontSize: 32 }}>{label}</Text>
+          <Text>Raiting {raiting}</Text>
         </View>
         <View style={styles.recipeInfoContainer}>
           <Text style={styles.text}>Calories {calories}</Text>
           <Text style={styles.text}>Cooking Time {cooking_time}</Text>
-          <Text style={styles.text}>Serving {serving}</Text>
         </View>
       </View>
     );
@@ -70,8 +43,8 @@ export default function App() {
   return (
     <View style={styles.container}>
       <FlatList
-        ref={r => (ref.current.scroll = r)}
-        data={recipes}
+        ref={(r) => (ref.current.scroll = r)}
+        data={Recipes}
         ListEmptyComponent={() => <Text>No Data</Text>}
         renderItem={renderItem}
         pagingEnabled
@@ -87,7 +60,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   recipeContainer: {
-    backgroundColor: 'yellow',
+    backgroundColor: '#e3b505',
     borderWidth: 1,
     width,
     height,
@@ -111,4 +84,5 @@ const styles = StyleSheet.create({
   text: {
     color: '#fff',
   },
+  imageContainer: {},
 });

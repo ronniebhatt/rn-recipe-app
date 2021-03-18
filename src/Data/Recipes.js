@@ -11,7 +11,7 @@ const Recipes = [
         'http://www.seriouseats.com/recipes/2011/12/chicken-vesuvio-recipe.html',
       shareAs:
         'http://www.edamam.com/recipe/chicken-vesuvio-b79327d05b8e5b838ad6cfd9576b30b6/chicken',
-      yield: 4.0,
+      raiting: 4.0,
       dietLabels: ['Low-Carb'],
       cautions: ['Sulfites'],
       ingredientLines: [
@@ -118,7 +118,7 @@ const Recipes = [
       ],
       calories: 4228.043058200812,
       totalWeight: 2976.8664549004047,
-      totalTime: 60.0,
+      cooking_time: 60.0,
       cuisineType: ['italian'],
       mealType: ['lunch/dinner'],
       dishType: ['main course'],
@@ -137,7 +137,7 @@ const Recipes = [
       url: 'http://norecipes.com/recipe/chicken-paprikash/',
       shareAs:
         'http://www.edamam.com/recipe/chicken-paprikash-8275bb28647abcedef0baaf2dcf34f8b/chicken',
-      yield: 4.0,
+      raiting: 4.5,
       dietLabels: ['Low-Carb'],
       cautions: ['Sulfites', 'FODMAP'],
       ingredientLines: [
@@ -253,7 +253,7 @@ const Recipes = [
       ],
       calories: 3033.2012500008163,
       totalWeight: 1824.6125000003276,
-      totalTime: 0.0,
+      cooking_time: 60,
       cuisineType: ['central europe'],
       mealType: ['lunch/dinner'],
       dishType: ['main course'],
@@ -272,7 +272,7 @@ const Recipes = [
       url: 'http://www.marthastewart.com/318981/baked-chicken',
       shareAs:
         'http://www.edamam.com/recipe/baked-chicken-be3ba087e212f13672b553ecfa876333/chicken',
-      yield: 4.0,
+      raiting: 4.3,
       dietLabels: ['Low-Carb'],
       cautions: ['FODMAP'],
       ingredientLines: [
@@ -318,7 +318,7 @@ const Recipes = [
       ],
       calories: 901.58575,
       totalWeight: 525.6156350198669,
-      totalTime: 0.0,
+      cooking_time: 60,
       cuisineType: ['american'],
       mealType: ['lunch/dinner'],
     },
@@ -337,7 +337,7 @@ const Recipes = [
         'http://www.bonappetit.com/columns/breadwinner/article/how-to-get-your-kids-to-eat-sauce-let-them-cook-it-themselves',
       shareAs:
         'http://www.edamam.com/recipe/catalan-chicken-2463f2482609d7a471dbbf3b268bd956/chicken',
-      yield: 14.0,
+      raiting: 4.5,
       dietLabels: ['Low-Carb'],
 
       cautions: ['Sulfites'],
@@ -401,7 +401,7 @@ const Recipes = [
       ],
       calories: 3900.8,
       totalWeight: 1987.5,
-      totalTime: 0.0,
+      cooking_time: 60,
       cuisineType: ['italian'],
       mealType: ['lunch/dinner'],
       dishType: ['main course'],
